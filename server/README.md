@@ -1,3 +1,3 @@
-# Apollo Fullstack Tutorial
+# Emre Mert - Kovan Assesment
 
 ## Server
