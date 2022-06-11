@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "baeb9135-f429-479a-a33c-81bc1fcf8581",
+		"name": "kovan",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4271026"
+	},
+	"item": [
+		{
+			"name": "get all items",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://kovan-dummy-api.herokuapp.com/items",
+					"protocol": "https",
+					"host": [
+						"kovan-dummy-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"items"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search by bike_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://kovan-dummy-api.herokuapp.com/items?bike_id=Q2RLQ",
+					"protocol": "https",
+					"host": [
+						"kovan-dummy-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"items"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "vehicle_type",
+							"value": "bike",
+							"disabled": true
+						},
+						{
+							"key": "bike_id",
+							"value": "Q2RLQ"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search by vehicle_type",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://kovan-dummy-api.herokuapp.com/items?vehicle_type=bike",
+					"protocol": "https",
+					"host": [
+						"kovan-dummy-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"items"
+					],
+					"query": [
+						{
+							"key": "vehicle_type",
+							"value": "bike",
+							"description": "scooter"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
